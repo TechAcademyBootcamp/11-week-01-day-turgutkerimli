@@ -1,0 +1,23 @@
+<html lang="en">
+    {% load custom_filters %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Filter</title>
+</head>
+<body>
+
+    <h1>{{date|format_dates}}</h1>
+    <h1>{{string|truncate:length}}</h1>
+    {% random as random %}
+    <h1>{{random}}</h1>
+    {% shape "rectangle" as rectangle %}
+    <h1>{{rectangle}}</h1>
+    {% shape "circle" as circle %}
+    <h1>{{circle}}</h1>
+    {% shape "triangle" as triangle %}
+    <h1>{{triangle}}</h1>
+
+</body>
+</html>
